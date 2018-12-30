@@ -34,3 +34,11 @@ TensorFlow Lite モデルファイルを作成します。
 % ./make_tflite_model.sh
 ```
 graph.lite というファイル名で作成されます。
+
+## TensorFlow書き換え
+
+[mobilenet.py](https://github.com/tfkeras/food101-tflite/blob/master/mobilenet.py)、
+[normalization.py](https://github.com/tfkeras/food101-tflite/blob/master/normalization.py)、
+[imagenet_utils.py](https://github.com/tfkeras/food101-tflite/blob/master/imagenet_utils.py)
+は[TensorFlow](https://github.com/tensorflow/tensorflow)ソースコードからコピーして、
+TensorFlow Lite モデルに変換可能なように書き換えています。
